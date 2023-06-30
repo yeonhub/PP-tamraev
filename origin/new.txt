@@ -1,0 +1,33 @@
+{
+  noticeData.slice().reverse().map(item =>
+    <tr key={item.id}>
+      <td>{item.id}</td>
+      <td>{item.title}</td>
+      <td>{item.date}</td>
+      <td>{item.view}</td>
+    </tr>
+  )
+}
+///
+parseInt(id)
+네, 맞습니다. parseInt(id)를 사용하여 id를 정수로 변환하는 이유는, URL의 매개변수는 기본적으로 문자열로 전달되기 때문입니다. 공지사항 데이터 배열에서 id는 숫자로 저장되어 있기 때문에, find 함수를 사용하여 id와 일치하는 공지사항을 찾기 위해서는 id를 숫자로 변환해야 합니다.
+
+예를 들어, id가 문자열 '1'일 경우 parseInt(id)를 사용하면 정수 1로 변환됩니다. 이렇게 변환된 값을 사용하여 공지사항 데이터 배열에서 원하는 공지사항을 찾을 수 있습니다.
+
+////
+
+  const location = useLocation();
+const headerClass = location.pathname === '/info' || location.pathname.startsWith('/noticeList') ? 'blue' : '';
+
+
+
+  const [isOpen, setIsOpen] = useState(false)
+  const onOpen = () => {
+    setIsOpen(!isOpen)
+    !isOpen ? document.body.classList.add('overflow') : document.body.classList.remove('overflow');
+  }
+
+  --------------
+          txt: `현대자동차 전기차 이용고객을 위해\n충전을 대신해서 가져다 드리는 픽업앤충전서비스가 런칭했습니다!\n\n픽업앤충전서비스 런칭 이벤트로\n무상 쿠폰 지급이 되고 있다고 하니\n마이현대App 쿠폰함에서 확인해보세요~!\n\n현재 제주도에서 제공되는 서비스는 아니지만,\n서울 거주자이면서 제주도에서 렌트를 하고 계신 분이라면\n잊지말고 꼭 무료로 서비스를 받으세요~\n`
+
+                    <p className="view_sub">{txt.split('\n').map((line, index) => <React.Fragment key={index}>{line}<br/></React.Fragment>)}</p>
