@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {HashRouter , Routes, Route, Link } from "react-router-dom";
+import {BrowserRouter , Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
       <div id='wrap'>
-        <HashRouter >
+        <BrowserRouter >
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />
@@ -33,7 +33,7 @@ const App = () => {
             </Route>
           </Routes>
           <Footer />
-        </HashRouter>
+        </BrowserRouter>
       </div>
       <GlobalStyle />
     </>

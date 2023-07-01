@@ -140,7 +140,7 @@ const Noticelist = () => {
               </thead>
               <tbody id="board_list">
                 {
-                  noticeData.slice().reverse().map(item =>
+                  	oticeData.sort((a, b) => b.id - a.id).map(item =>
                     <tr key={item.id}>
                       <td>{item.id}</td>
                       <td className='subject'>
