@@ -1,4 +1,4 @@
-# PP-tamraev-clone_coding
+a# PP-tamraev-clone_coding
 
 ## React-Router 연습 클론 코딩 (개인 프로젝트)
 
@@ -7,9 +7,7 @@
 
 ## 클론 사이트
 
-img (로고자리)
-
-[탐라는전기차](https://www.tamraev.com/)
+[![탐라는전기차](./mdimg/logo.png)](https://www.tamraev.com)
 
 ## 프로젝트 기술 스택
 
@@ -33,6 +31,8 @@ src	┌	assets	-	api	┌	main.js
 ```
 
 ## 프로젝트 캡쳐
+
+<img src="./mdimg/main.gif">
 
 ## 기능 구현
 
@@ -83,7 +83,7 @@ const App = () => {
 };
 ```
 
-img(notice 헤더)
+<img src="./mdimg/notice.gif">
 
 ```java
 const NoticeLayout = () => {
@@ -154,7 +154,8 @@ const Info = () => {
 
 ### 3) 페이지에 따른 태그 class, img src 변경
 
-img(header blue)
+<img src="./mdimg/header.gif">
+
 Home의 경우 Header의 class가 적용되어 있지 않지만, 다른 페이지로 넘어갈 경우 배경색 때문에 logo와 햄버거 메뉴가 보이지 않기 때문에 blue라는 class를 붙여주었다.
 
 ```javascript
@@ -187,7 +188,7 @@ const Header = () => {
 
 ### 4) 게시판 번호 내림차순 정렬
 
-img(게시판)
+<img src="./mdimg/noticeno.png">
 
 ```javascript
     {
