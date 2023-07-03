@@ -104,6 +104,8 @@ const NoticeLayout = () => {
 };
 ```
 
+<br>
+
 ### 2) Styled-Components
 
 css나 scss가 아닌 Styled-Components 사용해 style을 적용했다.
@@ -152,6 +154,9 @@ const Info = () => {
 	.
 ```
 
+
+<br>
+
 ### 3) 페이지에 따른 태그 class, img src 변경
 
 <img src="./mdimg/header.gif">
@@ -185,6 +190,8 @@ const Header = () => {
               <img src={`./img/logo${logoClass}.png`} alt="탐라는 전기차" />
             </Link>
 ```
+<br>
+
 
 ### 4) 게시판 번호 내림차순 정렬
 
