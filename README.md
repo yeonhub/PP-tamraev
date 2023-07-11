@@ -1,11 +1,11 @@
 a# PP-tamraev-clone_coding
 
-## React-Router 연습 클론 코딩 (개인 프로젝트)
+## React-Router 연습 코딩 (개인 프로젝트)
 
 | FE | 이상연 | [@yeonhub](https://github.com/yeonhub) |
 | -- | ------ | ----------------------------------- |
 
-## 클론 사이트
+## 사이트
 
 [![탐라는전기차](./mdimg/logo.png)](https://www.tamraev.com)
 
@@ -40,7 +40,7 @@ src	┌	assets	-	api	┌	main.js
 
 ### 1) Router
 
-이번 클론 코딩에서 익혀야 할 기술은 React-Router이다.
+이번 프로젝트에서 익혀야 할 기술은 React-Router이다.
 
 ```javascript
 const App = () => {
