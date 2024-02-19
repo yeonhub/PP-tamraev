@@ -55,7 +55,6 @@ const ContainerPopup = styled.div`
           font-size: 0;
           margin-left: -12px;
           vertical-align: middle;
-          /* background: url(../img/main/icon_heart_68x76_f33.png) no-repeat; */
           outline: none;
 
           &.play {
@@ -207,7 +206,9 @@ const Popup = ({ currentData, offPop }) => {
             <Swiper
               modules={[Navigation, Scrollbar, A11y, Autoplay]}
               spaceBetween={0}
+              // slidesPerView={2}
               slidesPerView={1}
+              // loop={false}
               loop={true}
               pagination={{ clickable: true }}
               autoplay={true}

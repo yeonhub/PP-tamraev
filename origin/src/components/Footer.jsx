@@ -79,7 +79,7 @@ const Footer = () => {
             <Link to={'/'}>탐라는 전기차</Link>
           </li>
           <li>
-          <Link to={"https://yeonhub.github.io/TP-EZtour_vanillaJS/"} target="_blank">이젠제주투어 </Link>
+          <Link to={"https://yeonhub.github.io/TP-EZtour_vanillaJS/"} target="_blank">이젠제주투어</Link>
           </li>
           <li>
             <Link to={'/noticeList'} >JEJU 전기차 관련 소식</Link>
