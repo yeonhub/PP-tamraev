@@ -115,6 +115,7 @@ const ContainerNotice = styled.div`
 
 import noticeData from '../assets/api/notice'
 import { Link } from 'react-router-dom';
+import NoticePaging from './NoticePaging';
 
 const Noticelist = () => {
   return (
@@ -140,7 +141,7 @@ const Noticelist = () => {
               </thead>
               <tbody id="board_list">
                 {
-                  	oticeData.sort((a, b) => b.id - a.id).map(item =>
+                  noticeData.sort((a, b) => b.id - a.id).map(item =>
                     <tr key={item.id}>
                       <td>{item.id}</td>
                       <td className='subject'>
@@ -154,16 +155,7 @@ const Noticelist = () => {
               </tbody>
             </table>
           </div>
-
-          <div className="paginate" id="board_paging">
-            <a className='btn_prev_2 disable' href=""></a>
-            <a className='btn_prev disable' href=""></a>
-            <ol>
-              <li><a href="" className='on'>1</a></li>
-            </ol>
-            <a className='btn_next disable' href=""></a>
-            <a className='btn_next_2 disable' href=""></a>
-          </div>
+          <NoticePaging />
         </div>
       </div>
     </ContainerNotice>
