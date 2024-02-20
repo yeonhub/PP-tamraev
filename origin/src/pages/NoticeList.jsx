@@ -112,9 +112,6 @@ const ContainerNotice = styled.div`
     }
   }
 `
-
-import noticeData from '../assets/api/notice'
-import { Link } from 'react-router-dom';
 import NoticePaging from './NoticePaging';
 
 const Noticelist = () => {
@@ -139,20 +136,7 @@ const Noticelist = () => {
                   <th>조회수</th>
                 </tr>
               </thead>
-              <tbody id="board_list">
-                {
-                  noticeData.sort((a, b) => b.id - a.id).map(item =>
-                    <tr key={item.id}>
-                      <td>{item.id}</td>
-                      <td className='subject'>
-                        <strong><Link to={`/noticeList/${item.id}`}>{item.title}</Link></strong></td>
-                      <td>{item.date}</td>
-                      <td>{item.view}</td>
-                    </tr>
-                  )
-                }
-
-              </tbody>
+              <NoticeTbody/>
             </table>
           </div>
           <NoticePaging />
